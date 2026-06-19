@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sports-outdoor.pages.dev/sitemap.xml
