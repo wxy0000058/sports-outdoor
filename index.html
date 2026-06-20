@@ -3,49 +3,43 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>⚽ 运动户外深度测评 | 思思好物</title>
-<meta name="description" content="跑鞋/健身/露营/骑行装备实测">
+<meta name="description" content="运动户外装备真实测评">
 <style>*{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter','Noto Sans SC','PingFang SC',sans-serif;background:#F8F9FC;color:#1F2937;line-height:1.8}
-:root{--p:#7C3AED;--p2:#6D28D9;--pd:#4C1D95;--pl:#EDE9FE;--pbg:#F5F3FF;--ac:#DC2626;--sg:#065F46;--sb:#D1FAE5;--dg:#991B1B;--db:#FEE2E2;--t:#1F2937;--tl:#6B7280;--bg:#F8F9FC;--cw:#FFF;--r:16px;--s:0 2px 8px rgba(0,0,0,.06);--sh:0 8px 24px rgba(124,58,237,.12);--b:#E5E7EB}
+:root{--p:#7C3AED}
 a{text-decoration:none}
 header{background:linear-gradient(135deg,#7C3AED,#5B21B6);color:#fff;padding:12px 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(124,58,237,.3)}
-header .nav{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-header .nav .brand{font-weight:800;font-size:18px;margin-right:auto;color:#fff;display:flex;align-items:center;gap:6px}
+header .nav{max-width:1100px;margin:0 auto;padding:0 16px;display:flex;gap:5px;flex-wrap:wrap;align-items:center}
+header .nav .brand{font-weight:800;font-size:18px;margin-right:auto;color:#fff}
 header .nav .brand span{background:rgba(255,255,255,.2);font-size:11px;padding:2px 8px;border-radius:10px;color:rgba(255,255,255,.9)}
-header .nav a{color:rgba(255,255,255,.85);font-size:14px;padding:5px 10px;border-radius:8px;transition:all .2s}
+header .nav a{color:rgba(255,255,255,.85);font-size:16px;padding:4px 8px;border-radius:8px}
 header .nav a:hover{background:rgba(255,255,255,.15);color:#fff}
 .container{max-width:1100px;margin:0 auto;padding:20px}
-.hero{background:linear-gradient(135deg,#EDE9FE,#F5F3FF,#FFF);border-radius:20px;padding:40px 32px;margin-bottom:24px;text-align:center;border:1px solid rgba(124,58,237,.1)}
-.hero h1{font-size:2.2em;font-weight:800;background:linear-gradient(135deg,#7C3AED,#4C1D95);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:6px;letter-spacing:-1px}
-.hero p{color:#6B7280;font-size:1.05em}
-.hero .cta{display:inline-block;margin-top:14px;background:linear-gradient(135deg,#7C3AED,#6D28D9);color:#fff;padding:10px 28px;border-radius:12px;font-size:.95em;font-weight:600;transition:all .25s}
-.hero .cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(124,58,237,.35)}
-.review-badge{display:inline-flex;align-items:center;gap:5px;background:#EDE9FE;color:#7C3AED;padding:4px 12px;border-radius:20px;font-size:.82em;font-weight:600;margin-bottom:10px}
-.post-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
-.post-card{background:#FFF;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:all .3s;border:1px solid #F3F4F6}
-.post-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(124,58,237,.12);border-color:#EDE9FE}
-.post-card .card-img{background:linear-gradient(135deg,#EDE9FE,#F5F3FF);height:140px;display:flex;align-items:center;justify-content:center;font-size:2.8em;color:#7C3AED;position:relative}
-.post-card .card-img .img-tag{position:absolute;top:10px;left:10px;background:#7C3AED;color:#fff;padding:3px 12px;border-radius:10px;font-size:.75em;font-weight:600}
-.post-card .card-body{padding:14px 16px}
-.post-card .card-body h3{font-size:.98em;font-weight:600;line-height:1.5;margin-bottom:6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hero{background:linear-gradient(135deg,#EDE9FE,#F5F3FF,#FFF);border-radius:20px;padding:36px 28px;margin-bottom:20px;text-align:center;border:1px solid rgba(124,58,237,.1)}
+.hero h1{font-size:2em;font-weight:800;background:linear-gradient(135deg,#7C3AED,#4C1D95);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:4px}
+.hero p{color:#6B7280;font-size:1em}
+.review-badge{display:inline-flex;background:#EDE9FE;color:#7C3AED;padding:3px 12px;border-radius:20px;font-size:.8em;font-weight:600;margin-bottom:8px}
+.post-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.post-card{background:#FFF;border-radius:14px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);transition:all .3s;border:1px solid #F3F4F6}
+.post-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(124,58,237,.12);border-color:#EDE9FE}
+.post-card .card-img{height:140px;position:relative;overflow:hidden;background:#EDE9FE}
+.post-card .card-img img{width:100%;height:100%;object-fit:cover;display:block}
+.post-card .card-img .img-tag{position:absolute;top:6px;left:6px;background:rgba(124,58,237,0.3);color:rgba(255,255,255,0.6);padding:2px 8px;border-radius:6px;font-size:.65em;font-weight:600}
+.post-card .card-img .cat-tag{position:absolute;bottom:6px;right:6px;background:rgba(0,0,0,0.4);color:rgba(255,255,255,0.7);padding:1px 8px;border-radius:5px;font-size:.6em}
+.post-card .card-body{padding:10px 14px}
+.post-card .card-body h3{font-size:.9em;font-weight:600;line-height:1.4;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .post-card .card-body h3 a{color:#1F2937}
 .post-card .card-body h3 a:hover{color:#7C3AED}
-.post-card .card-meta{display:flex;align-items:center;gap:8px;font-size:.8em;color:#6B7280;flex-wrap:wrap}
-.cps-banner{background:linear-gradient(135deg,#EDE9FE,#F5F3FF);border-radius:16px;padding:24px;margin:20px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px;border:1px solid rgba(124,58,237,.15)}
-.cps-banner .txt h3{font-size:1.05em;font-weight:700;color:#4C1D95;margin-bottom:4px}
-.cps-banner .txt p{font-size:.88em;color:#6B7280}
-.cps-banner .btn{background:linear-gradient(135deg,#7C3AED,#6D28D9);color:#fff;padding:8px 24px;border-radius:10px;font-weight:600;font-size:.9em;white-space:nowrap}
-.cps-banner .btn:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(124,58,237,.3)}
-footer{text-align:center;padding:24px;color:#9CA3AF;font-size:.85em;border-top:1px solid #E5E7EB;margin-top:32px}
-footer a{color:#7C3AED}
-@media(max-width:768px){.container{padding:12px}.post-list{grid-template-columns:1fr}.hero h1{font-size:1.6em}.cps-banner{flex-direction:column;text-align:center}.cps-banner .btn{width:100%;text-align:center}}
-@media(max-width:480px){.hero{padding:28px 18px}.post-card .card-img{height:100px;font-size:2.2em}}
+.post-card .card-meta{font-size:.72em;color:#9CA3AF;display:flex;gap:6px}
+.page-btn.active{background:#7C3AED!important;color:#fff!important;border-color:#7C3AED!important}
+footer{text-align:center;padding:20px;color:#9CA3AF;font-size:.82em;border-top:1px solid #E5E7EB;margin-top:28px}
+@media(max-width:768px){.container{padding:12px}.post-list{grid-template-columns:1fr}.hero h1{font-size:1.5em}}
 </style>
 </head>
 <body>
 <header>
   <div class="nav">
-    <a href="https://wxy0000058.github.io/3c-digital/" class="brand">✨ 思思好物 <span>评测</span></a>
+    <a href="/" class="brand">✨ 思思好物 <span>评测</span></a>
     <a href="https://wxy0000058.github.io/3c-digital/">💻 数码</a>
     <a href="https://wxy0000058.github.io/home-life/">🛋️ 家居</a>
     <a href="https://wxy0000058.github.io/beauty-care/">💄 美妆</a>
@@ -55,150 +49,114 @@ footer a{color:#7C3AED}
 </header>
 <div class="container">
   <div class="hero">
-    <div class="review-badge"><span class="shield">🛡️</span> 本评测基于真实购买体验</div>
+    <div class="review-badge">🛡️ 本评测基于真实购买体验</div>
     <h1>⚽ 运动户外深度测评</h1>
-    <p>跑鞋/健身/露营/骑行装备实测</p>
-    <p style="color:#9CA3AF;font-size:.88em;margin-top:6px">共 14 篇 · 每日更新</p>
+    <p>运动户外装备真实测评 · 共14篇</p>
   </div>
-  
-  <div class="post-list">
-    <div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="post-list"><div class="post-card">
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/01-2026跑鞋推荐.html">2026跑鞋推荐：从入门到马拉松，7双最值得买的跑鞋 推荐</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/01-2026跑鞋推荐.html">2026年跑鞋推荐：从入门到马拉松，Nike/亚瑟士/索康尼/Hoka/李宁横评</a></h3>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/02-家用跑步机怎么选-2026热门型号横向对比.html">家用跑步机怎么选？2026热门型号横向对比 推荐</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/02-家用跑步机怎么选-2026热门型号横向对比.html">家用跑步机怎么选？2026年热门型号横向对比：Keep/华为/小米/舒华</a></h3>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/03-2026户外装备清单.html">2026户外装备清单：新手露营必买的10件装备 推荐</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/03-2026户外装备清单.html">2026户外装备清单：新手露营必买的10件装备，帐篷/睡袋/炉头实测</a></h3>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/04-骑行装备推荐.html">骑行装备推荐：从头盔到车灯，骑行安全装备全攻略 推荐</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/04-骑行装备推荐.html">骑行装备推荐：从头盔到车灯，2026年安全骑行装备全攻略</a></h3>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/05-2026健身器材推荐.html">2026健身器材推荐：在家练出好身材的5件神器 推荐</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/05-2026健身器材推荐.html">2026健身器材推荐：在家练出好身材的5件神器，划船机/动感单车/哑铃</a></h3>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
     <h3><a href="posts/ai-04-2026年家用跑步机选购指南-从2000.html">2026年家用跑步机选购指南：从2000到20000元怎么选</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
     <h3><a href="posts/ai-04-2026年家用跑步机选购指南-从2000到2000.html">2026年家用跑步机选购指南：从2000到20000元怎么选</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
     <h3><a href="posts/ai-06-2026户外露营装备清单-新手入门必备的.html">2026户外露营装备清单：新手入门必备的10件好物</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">测评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">测评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
     <h3><a href="posts/ai-06-2026户外露营装备清单-新手入门必备的10件好物.html">2026户外露营装备清单：新手入门必备的10件好物</a></h3>
-    <div class="card-meta">
-      <span style="background:#EDE9FE;color:#7C3AED">测评</span>
-      <span>运动户外</span>
-    </div>
+    <div class="card-meta"><span>测评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">热评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">热评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
     <h3><a href="posts/batch-10-2026年瑜伽垫推荐-初学者到进阶全价位.html">2026年瑜伽垫推荐：初学者到进阶全价位</a></h3>
-    <div class="card-meta">
-      <span style="background:#FEF3C7;color:#D97706">热评</span>
-      <span>运动户外</span>
-    </div>
+    <div class="card-meta"><span>热评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">热评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">热评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
     <h3><a href="posts/batch-11-2026年登山鞋推荐-入门到专业越野.html">2026年登山鞋推荐：入门到专业越野</a></h3>
-    <div class="card-meta">
-      <span style="background:#FEF3C7;color:#D97706">热评</span>
-      <span>运动户外</span>
-    </div>
+    <div class="card-meta"><span>热评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">热评</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">热评</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/batch-12-2026年筋膜枪推荐-运动放松必备.html">2026年筋膜枪推荐：运动放松必备</a></h3>
-    <div class="card-meta">
-      <span style="background:#FEF3C7;color:#D97706">热评</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/batch-12-2026年筋膜枪推荐-运动放松必备.html">2026年筋膜枪推荐：运动放松必备，Theragun/倍益康/云麦/京东京造横评</a></h3>
+    <div class="card-meta"><span>热评</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">最新</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">最新</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/daily-0619-2026年哑铃推荐-可调节vs固定哑铃选购攻略.html">2026年哑铃推荐：可调节vs固定哑铃选购攻略</a></h3>
-    <div class="card-meta">
-      <span style="background:#DBEAFE;color:#2563EB">最新</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/daily-0619-2026年哑铃推荐-可调节vs固定哑铃选购攻略.html">2026年哑铃推荐：可调节vs固定哑铃选购攻略，迪卡侬/Keep/万强/悍苏横评</a></h3>
+    <div class="card-meta"><span>最新</span><span>·</span><span>运动户外</span></div>
   </div>
 </div><div class="post-card">
-  <div class="card-img"><span class="img-tag">最新</span>⚽</div>
+  <div class="card-img"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=300&h=150&fit=crop&q=80" alt="" loading="eager"><span class="img-tag">最新</span><span class="cat-tag">运动户外</span></div>
   <div class="card-body">
-    <h3><a href="posts/daily-0619-2026年运动手表推荐-佳明高驰华为横评.html">2026年运动手表推荐：佳明高驰华为横评</a></h3>
-    <div class="card-meta">
-      <span style="background:#DBEAFE;color:#2563EB">最新</span>
-      <span>运动户外</span>
-    </div>
+    <h3><a href="posts/daily-0619-2026年运动手表推荐-佳明高驰华为横评.html">2026年运动手表推荐：佳明/高驰/华为横评，跑者/越野/日常全场景对比</a></h3>
+    <div class="card-meta"><span>最新</span><span>·</span><span>运动户外</span></div>
   </div>
+</div></div>
 </div>
-  </div>
-  
-  <div class="cps-banner">
-    <div class="txt">
-      <h3>🛒 今日超值好物推荐</h3>
-      <p>折淘客精选 · 实时更新最优价格</p>
-    </div>
-    <a href="https://s.taobao.com/search?q=运动户外" target="_blank" class="btn">查看今日优惠 →</a>
-  </div>
-</div>
-<footer>© 2026 思思好物 — 好物不迷路，思思来指路 ✨ · <a href="#">关于我们</a> · <a href="#">评测标准</a></footer>
+<footer>© 2026 思思好物 — 好物不迷路，思思来指路 ✨</footer>
+<script>
+(function(){
+  var n=8,c=document.querySelectorAll('.post-card'),t=Math.ceil(c.length/n);
+  if(t<=1)return;
+  function p(i){var s=(i-1)*n,e=s+n;c.forEach(function(x,j){x.style.display=(j>=s&&j<e)?'':'none'});document.querySelectorAll('.page-btn').forEach(function(b){b.classList.toggle('active',parseInt(b.dataset.page)===i)});document.getElementById('pi').textContent=i+'/'+t+'页'}
+  var nav=document.createElement('div');nav.style.cssText='display:flex;align-items:center;justify-content:center;gap:8px;margin:24px 0;flex-wrap:wrap';
+  var prv=document.createElement('a');prv.href='javascript:;';prv.textContent='‹ 上一页';prv.style.cssText='padding:6px 14px;border-radius:8px;font-size:.88em;color:#7C3AED;background:#EDE9FE;text-decoration:none';
+  prv.onclick=function(){var cur=parseInt(document.querySelector('.page-btn.active').dataset.page);if(cur>1)p(cur-1)};
+  nav.appendChild(prv);
+  for(var i=1;i<=t;i++){var b=document.createElement('a');b.href='javascript:;';b.textContent=i;b.className='page-btn';b.dataset.page=i;b.style.cssText='padding:6px 12px;border-radius:8px;font-size:.88em;color:#4B5563;background:#FFF;border:1px solid #E5E7EB;text-decoration:none';b.onclick=function(){p(parseInt(this.dataset.page))};nav.appendChild(b)}
+  var nxt=document.createElement('a');nxt.href='javascript:;';nxt.textContent='下一页 ›';nxt.style.cssText='padding:6px 14px;border-radius:8px;font-size:.88em;color:#7C3AED;background:#EDE9FE;text-decoration:none';
+  nxt.onclick=function(){var cur=parseInt(document.querySelector('.page-btn.active').dataset.page);if(cur<t)p(cur+1)};
+  nav.appendChild(nxt);
+  var inf=document.createElement('span');inf.id='pi';inf.style.cssText='font-size:.82em;color:#9CA3AF;margin-left:8px';
+  nav.appendChild(inf);
+  document.querySelector('.post-list').after(nav);p(1);
+})();
+</script>
 </body>
 </html>
